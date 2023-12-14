@@ -24,8 +24,8 @@ create table grupe(
 	smjer			int			not null,
 	datumpocetka	datetime,
 	maxpolaznika	int			not null,
-	predavac		int
 
+	kreiranje
 );
 
 
