@@ -3,7 +3,7 @@ go
 drop database if exists edunovawp3;
 go
 -- ovo je komentar
-create database edunovawp3 collate Croatian_CI_AS;
+create database edunovawp3;
 go
 --drop database edunovawp3;
 --use master
@@ -24,8 +24,8 @@ create table grupe(
 	smjer			int			not null,
 	datumpocetka	datetime,
 	maxpolaznika	int			not null,
-	predavac		int
 
+	kreiranje
 );
 
 
