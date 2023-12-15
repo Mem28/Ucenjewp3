@@ -35,7 +35,31 @@ insert into predavaci( ime,prezime,email,oib,iban)
 values('Marijan', 'Novak', 'marnovak@gmail.com', null, 'HR23000036487475384');
 
 
+select * from polaznici;
 
+insert into polaznici (ime, prezime, email, oib, brojugovora)
+values ('Ana', 'Horvat', 'ana.horvat@gmail.com', null, null);
+
+insert into polaznici (ime, prezime, email, oib, brojugovora)
+values ('Tea', 'Perić', 'tea.peric@gmail.com', null, null);
+
+insert into polaznici (ime, prezime, email, oib, brojugovora)
+values ('Leon', 'Androković', 'leonoandrokovic@gmail.com', null, null);
+
+insert into polaznici (ime, prezime, email, oib, brojugovora)
+values ('Petar', 'Stokovir', 'petar.perosto@gmail.com', null, null);
+
+insert into polaznici (ime, prezime, email, oib, brojugovora)
+values ('Julija', 'Marinković', 'juli.marinkovic@gmail.com', null, null);
+
+insert into polaznici (ime, prezime, email, oib, brojugovora)
+values ('Patrik', 'Horvokas', 'patrik.uvijek@gmail.com', null, null);
+
+insert into polaznici (ime, prezime, email, oib, brojugovora)
+values ('Dolores', 'Pušić', 'dooris.pusic@gmail.com', null, null);
+
+insert into polaznici (ime, prezime, email, oib, brojugovora)
+values ('Toni', 'Lukić', 'toni.lukic22@gmail.com', null, null);
 
 
 
