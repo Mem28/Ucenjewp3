@@ -40,8 +40,38 @@ values ('Grafički dizajner',150, null,null);
 insert into smjerovi(naziv,trajanje,cijena,vaucer)
 values ('Računalni operater',155, 371.62,null);
 
+insert into smjerovi(naziv,trajanje,cijena,vaucer)
+values ('Menadžer marketinga',150, null,null);
 
+insert into smjerovi(naziv,trajanje,cijena,vaucer)
+values ('Turistički vodič',150, null,null);
 
+insert into smjerovi(naziv,trajanje,cijena,vaucer)
+values ('Menadžer prodaje',150, null,null);
+
+insert into smjerovi(naziv,trajanje,cijena,vaucer)
+values ('Menadžer marketinga',150, null,null);
+
+insert into smjerovi(naziv,trajanje,cijena,vaucer)
+values ('Menadžer financija',150, null,null);
+
+insert into smjerovi(naziv,trajanje,cijena,vaucer)
+values ('Poslovni tajnik/ca',40, null,null);
+
+insert into smjerovi(naziv,trajanje,cijena,vaucer)
+values ('Primjena GDPR-a',null, null,null);
+
+insert into smjerovi(naziv,trajanje,cijena,vaucer)
+values ('Medijski trening',16, null,null);
+
+insert into smjerovi(naziv,trajanje,cijena,vaucer)
+values ('Njemački jezik',30, 378.26,null);
+
+insert into smjerovi(naziv,trajanje,cijena,vaucer)
+values ('Prijevodi online',null, null,null);
+
+insert into smjerovi(naziv,trajanje,cijena,vaucer)
+values ('Pripreme za državnu maturu', null, null,null);
 
 
 
