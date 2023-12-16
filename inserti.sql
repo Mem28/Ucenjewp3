@@ -4,41 +4,47 @@ select * from smjerovi;
 
 
 insert into smjerovi (naziv,trajanje,cijena,vaucer)
-values ('web programiranje', 225, 1911.10, 1);
+values ('Web programiranje', 225, 1911.10, 1);
 
-insert into smjerovi(naziv) values ('web dizajn');
-insert into smjerovi(naziv) values ('knjigovodstvo');
-insert into smjerovi(naziv) values ('engleski jezik');
-
-insert into smjerovi(naziv,trajanje,cijena,vaucer)
-values ('java developer',130, 922.42,0);
+insert into smjerovi(naziv) values ('Web dizajn/Front end developer');
+insert into smjerovi(naziv) values ('Knjigovođa/Računovođa');
+insert into smjerovi(naziv) values ('Engleski jezik');
 
 insert into smjerovi(naziv,trajanje,cijena,vaucer)
-values ('php developer',130, 922.42,0);
+values ('Java developer',130, 922.42,0);
 
 insert into smjerovi(naziv,trajanje,cijena,vaucer)
-values ('android developer',130, null ,0);
+values ('Php developer',130, 922.42,0);
 
 insert into smjerovi(naziv,trajanje,cijena,vaucer)
-values ('wordpress developer',20, null,0);
+values ('Android developer',130, null ,0);
 
 insert into smjerovi(naziv,trajanje,cijena,vaucer)
-values ('javascript developer',30, null ,0);
+values ('Wordpress developer',20, null,0);
 
 insert into smjerovi(naziv,trajanje,cijena,vaucer)
-values ('woocommerce trening',24, null,null);
+values ('Javascript developer',30, null ,0);
+
+insert into smjerovi(naziv,trajanje,cijena,vaucer)
+values ('Woocommerce trening',24, null,null);
 
 insert into smjerovi(naziv,trajanje,cijena,vaucer)
 values ('3D print dizajner',130, null,null);
 
 insert into smjerovi(naziv,trajanje,cijena,vaucer)
-values ('serviser osobnih računala',155, null,null);
+values ('Serviser osobnih računala',155, null,null);
 
 insert into smjerovi(naziv,trajanje,cijena,vaucer)
-values ('grafički dizajner',150, null,null);
+values ('Grafički dizajner',150, null,null);
 
 insert into smjerovi(naziv,trajanje,cijena,vaucer)
-values ('računalni operater',155, 371.62,null);
+values ('Računalni operater',155, 371.62,null);
+
+
+
+
+
+
 
 select * from predavaci;
 
