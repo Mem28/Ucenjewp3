@@ -4,7 +4,7 @@ select * from smjerovi;
 
 
 insert into smjerovi (naziv,trajanje,cijena,vaucer)
-values ('Web programiranje', 225, 1911.10, 1);
+values ('Web programiranje', 225, 1315.68, 1);
 
 insert into smjerovi(naziv) values ('Web dizajn/Front end developer');
 insert into smjerovi(naziv) values ('Knjigovođa/Računovođa');
@@ -80,13 +80,69 @@ select * from predavaci;
 
 insert into predavaci( ime,prezime,email,oib,iban)
 values ('Tomislav', 'Jakopec', 'tomislav.jakopec@gmail.com', null,null);
-insert into predavaci( ime,prezime,email,oib,iban)
-values ('Pero', 'Marić', 'maric.pero@gmail.com', null, null);
-insert into predavaci( ime,prezime,email,oib,iban)
-values('Željka', 'Tikulić', 'zeljka_tikulic@gmail.com', '55543215762', null);
-insert into predavaci( ime,prezime,email,oib,iban)
-values('Marijan', 'Novak', 'marnovak@gmail.com', null, 'HR23000036487475384');
 
+insert into predavaci( ime,prezime,email,oib,iban)
+values ('Dino', 'Budić', 'dino.budić@gmail.com', null, null);
+
+insert into predavaci( ime,prezime,email,oib,iban)
+values('Darko', 'Raguž', 'darko.raguz@gmail.com', null, null);
+
+insert into predavaci( ime,prezime,email,oib,iban)
+values('Krunoslav', 'Erk', 'krunoslav.erk@gmail.com', null, null);
+
+insert into predavaci( ime,prezime,email,oib,iban)
+values('Pavle', 'Vidaković', 'pavle.vidakovic@gmail.com', null, null);
+
+insert into predavaci( ime,prezime,email,oib,iban)
+values('Gordana ', 'Cerovečki-Marij', 'gordana.cerovecki@gmail.com', null, null);
+
+insert into predavaci( ime,prezime,email,oib,iban)
+values('Toni','Žufić', 'toni.zufic@gmail.com', null, null);
+
+insert into predavaci( ime,prezime,email,oib,iban)
+values('Anđelko','Rukelj', 'rukelj.and@gmail.com', null, null);
+
+insert into predavaci( ime,prezime,email,oib,iban)
+values('Daria','Duždević', 'daria.duzdevic@gmail.com', null, null);
+
+insert into predavaci( ime,prezime,email,oib,iban)
+values('Tihomir','Hunjak', 'tihomir.hunjak@gmail.com', null, null);
+
+insert into predavaci( ime,prezime,email,oib,iban)
+values('Davor','Slivka', 'davor.slivka@gmail.com', null, null);
+
+insert into predavaci( ime,prezime,email,oib,iban)
+values('Eduard', 'Kuzma', 'eduard.kuzma@gmail.com', null, null);
+
+insert into predavaci( ime,prezime,email,oib,iban)
+values('Ivor','Majer', 'ivor.majer@gmail.com', null, null);
+
+insert into predavaci( ime,prezime,email,oib,iban)
+values('Marinela','Lovrić', 'marinela.lovric@gmail.com', null, null);
+
+insert into predavaci( ime,prezime,email,oib,iban)
+values('Monika','Petrinec', 'monika.petrinec@gmail.com', null, null);
+
+insert into predavaci( ime,prezime,email,oib,iban)
+values('Barbara','Dujmović', 'barbara.dujmovic@gmail.com', null, null);
+
+insert into predavaci( ime,prezime,email,oib,iban)
+values('Maria','Dubravkić', 'marija.dubravkic@gmail.com', null, null);
+
+insert into predavaci( ime,prezime,email,oib,iban)
+values('Marijana','Žaper', 'marijana.zaper@gmail.com', null, null);
+
+insert into predavaci( ime,prezime,email,oib,iban)
+values('Marinela','Boras', 'marinela.boras@gmail.com', null, null);
+
+insert into predavaci( ime,prezime,email,oib,iban)
+values('Dora','Pavić', 'dora.pavic@gmail.com', null, null);
+
+insert into predavaci( ime,prezime,email,oib,iban)
+values('Miroslav','Dikanović', 'miroslav.dikanovic@gmail.com', null, null);
+
+insert into predavaci( ime,prezime,email,oib,iban)
+values('Toni','Žufić', 'toni.zufic@gmail.com', null, null);
 
 select * from polaznici;
 
