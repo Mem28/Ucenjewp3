@@ -6,9 +6,15 @@ select * from smjerovi;
 insert into smjerovi (naziv,trajanje,cijena,vaucer)
 values ('Web programiranje', 225, 1315.68, 1);
 
-insert into smjerovi(naziv) values ('Web dizajn/Front end developer');
-insert into smjerovi(naziv) values ('Knjigovođa/Računovođa');
-insert into smjerovi(naziv) values ('Engleski jezik');
+insert into smjerovi(naziv,trajanje,cijena,vaucer) 
+values ('Web dizajn/Front end developer', 155, 783.06, null);
+
+insert into smjerovi(naziv,trajanje,cijena,vaucer) 
+values ('Knjigovođa/Računovođa', 180, 988.78,1);
+
+
+insert into smjerovi(naziv,trajanje,cijena,vaucer)
+values ('Engleski jezik', 30, 378.26, null);
 
 insert into smjerovi(naziv,trajanje,cijena,vaucer)
 values ('Java developer',130, 922.42,0);
