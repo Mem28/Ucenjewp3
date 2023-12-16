@@ -10,7 +10,7 @@ go
 use edunovawp3;
 
 create table smjerovi(
-sifra int not null primary key identity(10000,1),
+sifra int not null primary key identity(1,1),
 naziv varchar(100) not null,
 trajanje int null, --null se ne piše. Ako ne piše not null onda se podrazumjeva null
 cijena decimal(18,2), -- iako ništa ne piše je null
