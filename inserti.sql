@@ -9,27 +9,20 @@ values ('Web programiranje', 225, 1315.68, 1);
 insert into smjerovi(naziv,trajanje,cijena,vaucer) 
 values ('Web dizajn/Front end developer', 155, 783.06, null);
 
-insert into smjerovi(naziv,trajanje,cijena,vaucer) 
-values ('Knjigovođa/Računovođa', 180, 988.78,1);
-
+insert into smjerovi(naziv,trajanje,cijena,vaucer)
+values ('Java developer',130, 922.42,null);
 
 insert into smjerovi(naziv,trajanje,cijena,vaucer)
-values ('Engleski jezik', 30, 378.26, null);
+values ('Php developer',130, 922.42,null);
 
 insert into smjerovi(naziv,trajanje,cijena,vaucer)
-values ('Java developer',130, 922.42,0);
+values ('Android developer',130, null ,null);
 
 insert into smjerovi(naziv,trajanje,cijena,vaucer)
-values ('Php developer',130, 922.42,0);
+values ('Wordpress developer',20, null, null);
 
 insert into smjerovi(naziv,trajanje,cijena,vaucer)
-values ('Android developer',130, null ,0);
-
-insert into smjerovi(naziv,trajanje,cijena,vaucer)
-values ('Wordpress developer',20, null,0);
-
-insert into smjerovi(naziv,trajanje,cijena,vaucer)
-values ('Javascript developer',30, null ,0);
+values ('Javascript developer',30, null ,null);
 
 insert into smjerovi(naziv,trajanje,cijena,vaucer)
 values ('Woocommerce trening',24, null,null);
@@ -45,6 +38,9 @@ values ('Grafički dizajner',150, null,null);
 
 insert into smjerovi(naziv,trajanje,cijena,vaucer)
 values ('Računalni operater',155, 371.62,null);
+
+insert into smjerovi(naziv,trajanje,cijena,vaucer) 
+values ('Knjigovođa/Računovođa', 180, 988.78,1);
 
 insert into smjerovi(naziv,trajanje,cijena,vaucer)
 values ('Menadžer marketinga',150, null,null);
@@ -69,6 +65,9 @@ values ('Primjena GDPR-a',null, null,null);
 
 insert into smjerovi(naziv,trajanje,cijena,vaucer)
 values ('Medijski trening',16, null,null);
+
+insert into smjerovi(naziv,trajanje,cijena,vaucer)
+values ('Engleski jezik', 30, 378.26, null);
 
 insert into smjerovi(naziv,trajanje,cijena,vaucer)
 values ('Njemački jezik',30, 378.26,null);
