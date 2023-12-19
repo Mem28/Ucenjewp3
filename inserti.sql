@@ -193,7 +193,18 @@ values ('Martina', 'Monah', 'martinamon@gmail.com', null, null);
 insert into polaznici (ime, prezime, email, oib, brojugovora)
 values ('Sara', 'Brt', 'sarabrt@gmail.com', null, null);
 
+insert into polaznici (ime, prezime, email, oib, brojugovora)
+values ('Toni', 'Mešin', 'tonimesin@gmail.com', null, null);
 
+insert into polaznici (ime, prezime, email, oib, brojugovora)
+values ('Leon', 'Bašić', 'leonbas@gmail.com', null, null);
 
+insert into polaznici (ime, prezime, email, oib, brojugovora)
+values ('Luka', 'Horvat', 'horvatluka@gmail.com', null, null);
 
+insert into polaznici (ime, prezime, email, oib, brojugovora)
+values ('Antonio', 'Lekić', 'antoniolekic@gmail.com', null, null);
+
+insert into polaznici (ime, prezime, email, oib, brojugovora)
+values ('Tonka', 'Klarić', 'tonkaklaric@gmail.com', null, null);
 
