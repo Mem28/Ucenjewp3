@@ -99,8 +99,8 @@ da napravi jaču verziju tada popularnog Americana.');
 
 insert into sastojci(naziv,vrsta)
 values
-('bijeli rum','alkohol'),('sok cijeðene limete','sok'),('mineralna voda',null),('smeði šeæer',null),('menta',null),('drobljeni led',null),
-('liker od breskve','liker'),('votka','alkohol'),('sok od naranèe','sok'),('sok od brusnice','sok'),('kockice leda',null),
+('bijeli rum','alkohol'),('sok cijeđene limete','sok'),('mineralna voda',null),('smeđi šećer',null),('menta',null),('drobljeni led',null),
+('liker od breskve','liker'),('votka','alkohol'),('sok od naranče','sok'),('sok od brusnice','sok'),('kockice leda',null),
 ('krema od kokosa',null),('sirup od kokosa','sirup'),('sok od ananasa','sok'),('Cointreau','alkohol'),('tequila','alkohol'),
 ('simple sirup','sirup'),('sol',null),('bourbon whiskey','alkohol'),('sok od limuna','sok'),('angostura',null),('amaretto','alkohol'),
 ('coca-cola','sok'),('ginger beer',null),('triple sec','alkohol'),('grenadine sirup','sirup'),('gin','alkohol'),('vermouth','alkohol'),
@@ -108,11 +108,11 @@ values
 
 insert into stavke(koktel,sastojak,normativ)
 values
-(1,1,'5cl'),(1,2,'3cl'),(1,3,'1dcl'),(1,4,'1žlica'),(1,5,'7listiæa'),(1,6,'puna čaša');
+(1,1,'5cl'),(1,2,'3cl'),(1,3,'1dcl'),(1,4,'1žlica'),(1,5,'7listića'),(1,6,'puna čaša');
 
 insert into stavke(koktel,sastojak,normativ)
 values
-(2,2,'3cl'),(2,3,'1dcl'),(2,4,'1žlica'),(2,5,'7listiæa'),(2,6,'puna čaša');
+(2,2,'3cl'),(2,3,'1dcl'),(2,4,'1žlica'),(2,5,'7listića'),(2,6,'puna čaša');
 
 insert into stavke(koktel,sastojak,normativ)
 values
@@ -128,7 +128,7 @@ values
 
 insert into stavke(koktel,sastojak,normativ)
 values
-(6,8,'3cl'),(6,15,'1,5cl'),(6,2,'1žlièica'),(6,10,'0,5cl'),(6,11,'puna èaša');
+(6,8,'3cl'),(6,15,'1,5cl'),(6,2,'1žličica'),(6,10,'0,5cl'),(6,11,'puna čaša');
 
 insert into stavke(koktel,sastojak,normativ)
 values
@@ -140,7 +140,7 @@ values
 
 insert into stavke(koktel,sastojak,normativ)
 values
-(9,4,'1žlièica'),(9,21,'3kapljice'),(9,19,'6cl');
+(9,4,'1žličica'),(9,21,'3kapljice'),(9,19,'6cl');
 
 insert into stavke(koktel,sastojak,normativ)
 values
