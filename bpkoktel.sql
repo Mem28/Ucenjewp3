@@ -26,7 +26,6 @@ alter table stavke add foreign key (koktel) references kokteli(sifra);
 alter table stavke add foreign key (sastojak) references sastojci(sifra);
 
 
-
 insert into kokteli(naziv,opis)
 values
 ('Mojito','Mojito je jedan od najpoznatijih koktela na svijetu. Tradicionalni Kubanski koktel nastao u Havani 
@@ -77,16 +76,16 @@ Svoju tekuću kreaciju “trgnuo” je s tolikim užitkom da su je i ostali htje
 
 ('Moscow mule','U New Yorku 1941. tri prijatelja su sjedila za stolom restorana. Jedan od njih se bavio proizvodnjom piva od đumbira,
 drugi distribucijom votke, a treći hrane. Odlučili su spariti votku, pivo od đumbira 
-i limun te su dobili koktel koji je poharao cijelu zemlju i lansirao Smirnoff u vrh industrije alkoholnih pića.');
+i limun te su dobili koktel koji je poharao cijelu zemlju i lansirao Smirnoff u vrh industrije alkoholnih pića.'),
 
 ('Tequila sunrise','Vjeruje se da je Tequila Sunrise stvorena 1930-ih u Tijuani, Meksiko. 
 Međutim, stekao je široku popularnost 1970-ih, dijelom zahvaljujući spominjanju u pjesmi 
-Rolling Stonesa “Brown Sugar”. Tijekom godina, ostao je omiljeni koktel, slavljen zbog svog upečatljivog izgleda i prekrasnog profila okusa.');
+Rolling Stonesa “Brown Sugar”. Tijekom godina, ostao je omiljeni koktel, slavljen zbog svog upečatljivog izgleda i prekrasnog profila okusa.'),
 
 
 ('Long island iced tea','Svoje ponosno ime koktel je dobio po Long Islandu koji se nalazi na jugu New Yorka.
  Izumljen je prije 100 godina, odnosno tijekom slavne prohibicije 1920-ih u Sjedinjenim Državama. 
- Stanovnici su jednostavno morali biti šifrirani od policije, pa su se sve vrste alkoholnih pića maskirale u bezalkoholne');
+ Stanovnici su jednostavno morali biti šifrirani od policije, pa su se sve vrste alkoholnih pića maskirale u bezalkoholne'),
 
 
 ('Negroni','Dolazeći iz prekrasne Italije, koktel Negroni je klasik koji zaslužuje pažnju svakog ljubitelja koktela.
