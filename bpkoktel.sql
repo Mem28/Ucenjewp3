@@ -26,9 +26,10 @@ normativ varchar(50),
 alter table stavke add foreign key (koktel) references kokteli(sifra);
 alter table stavke add foreign key (sastojak) references sastojci(sifra);
 
-select*from kokteli;
+
 insert into kokteli(naziv,opis,upute_za_pripremu)
 values
+
 ('Mojito','Mojito je jedan od najpoznatijih koktela na svijetu. Tradicionalni Kubanski koktel nastao u Havani 
 brzinom munje se proširio po svijetu zahvaljujući trgovcima i gusarima. S obzirom da je imao sastojke
 koji su u izobilju na otoku te uz njegovu lakoću izrade nije ni čudo da je postao tako popularan.',
@@ -36,9 +37,8 @@ koji su u izobilju na otoku te uz njegovu lakoću izrade nije ni čudo da je pos
  2. Dopunite ledom ili drobljenim ledom
  3. Promiješajte pokretima žlicom gore dolje da se svi sastojci izmiješaju i to radite 20 sekundi
  4. Dodajte mineralnu vodu i ponovno promiješajte 20 sekundi
- 5. Ukrasite stabljikom mente i uživajte u ljetnom klasiku');
- insert into kokteli(naziv,opis,upute_za_pripremu)
-values
+ 5. Ukrasite stabljikom mente i uživajte u ljetnom klasiku'),
+
 ('Mojito virgin','Osvježavajuća mješavina limete i mente, ovaj Virgin Mojito recept bit će vaše novo omiljeno piće!
 Ovaj bezalkoholni recept za mojito bit će hit kod djece i odraslih. ',
 '1. Sve sastojke osim mineralne vode ulijte u čašu
