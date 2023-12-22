@@ -79,6 +79,22 @@ Svoju tekuću kreaciju “trgnuo” je s tolikim užitkom da su je i ostali htje
 drugi distribucijom votke, a treći hrane. Odlučili su spariti votku, pivo od đumbira 
 i limun te su dobili koktel koji je poharao cijelu zemlju i lansirao Smirnoff u vrh industrije alkoholnih pića.');
 
+('Tequila sunrise','Vjeruje se da je Tequila Sunrise stvorena 1930-ih u Tijuani, Meksiko. 
+Međutim, stekao je široku popularnost 1970-ih, dijelom zahvaljujući spominjanju u pjesmi 
+Rolling Stonesa “Brown Sugar”. Tijekom godina, ostao je omiljeni koktel, slavljen zbog svog upečatljivog izgleda i prekrasnog profila okusa.');
+
+
+('Long island iced tea','Svoje ponosno ime koktel je dobio po Long Islandu koji se nalazi na jugu New Yorka.
+ Izumljen je prije 100 godina, odnosno tijekom slavne prohibicije 1920-ih u Sjedinjenim Državama. 
+ Stanovnici su jednostavno morali biti šifrirani od policije, pa su se sve vrste alkoholnih pića maskirale u bezalkoholne');
+
+
+('Negroni','Dolazeći iz prekrasne Italije, koktel Negroni je klasik koji zaslužuje pažnju svakog ljubitelja koktela.
+Njegova povijest počinje početkom 20. stoljeća, kada je prema legendi grof Camillo Negroni, zamolio barmena u Caffèu Casoni 
+da napravi jaču verziju tada popularnog Americana.');
+
+
+
 
 
 insert into sastojci(naziv,vrsta)
@@ -87,30 +103,28 @@ values
 ('liker od breskve','liker'),('votka','alkohol'),('sok od naranèe','sok'),('sok od brusnice','sok'),('kockice leda',null),
 ('krema od kokosa',null),('sirup od kokosa','sirup'),('sok od ananasa','sok'),('Cointreau','alkohol'),('tequila','alkohol'),
 ('simple sirup','sirup'),('sol',null),('bourbon whiskey','alkohol'),('sok od limuna','sok'),('angostura',null),('amaretto','alkohol'),
-('coca-cola','sok'),('ginger beer',null),('triple sec','alkohol');
-
-
-
+('coca-cola','sok'),('ginger beer',null),('triple sec','alkohol'),('grenadine sirup','sirup'),('gin','alkohol'),('vermouth','alkohol'),
+('campari','alkohol');
 
 insert into stavke(koktel,sastojak,normativ)
 values
-(1,1,'5cl'),(1,2,'3cl'),(1,3,'1dcl'),(1,4,'1žlica'),(1,5,'7listiæa'),(1,6,'puna èaša');
+(1,1,'5cl'),(1,2,'3cl'),(1,3,'1dcl'),(1,4,'1žlica'),(1,5,'7listiæa'),(1,6,'puna čaša');
 
 insert into stavke(koktel,sastojak,normativ)
 values
-(2,2,'3cl'),(2,3,'1dcl'),(2,4,'1žlica'),(2,5,'7listiæa'),(2,6,'puna èaša');
+(2,2,'3cl'),(2,3,'1dcl'),(2,4,'1žlica'),(2,5,'7listiæa'),(2,6,'puna čaša');
 
 insert into stavke(koktel,sastojak,normativ)
 values
-(3,7,'4cl'),(3,8,'3cl'),(3,9,'8cl'),(3,10,'2cl'),(3,11,'puna èaša');
+(3,7,'4cl'),(3,8,'3cl'),(3,9,'8cl'),(3,10,'2cl'),(3,11,'puna čaša');
 
 insert into stavke(koktel,sastojak,normativ)
 values
-(4,1,'6cl'),(4,12,'3cl'),(4,13,'2cl'),(4,14,'4,5cl'),(4,2,'1,5cl'),(4,6,'puna èaša - blendati');
+(4,1,'6cl'),(4,12,'3cl'),(4,13,'2cl'),(4,14,'4,5cl'),(4,2,'1,5cl'),(4,6,'puna čaša - blendati');
 
 insert into stavke(koktel,sastojak,normativ)
 values
-(5,1,'6cl'), (5,2,'2cl'),(5,17,'2cl'),(5,11,'puna èaša');
+(5,1,'6cl'), (5,2,'2cl'),(5,17,'2cl'),(5,11,'puna čaša');
 
 insert into stavke(koktel,sastojak,normativ)
 values
@@ -118,11 +132,11 @@ values
 
 insert into stavke(koktel,sastojak,normativ)
 values
-(7,16,'5cl'),(7,15,'2cl'),(7,17,'0,5cl'),(7,2,'2cl'),(7,20,'1cl'),(7,25,'1,5cl'),(7,11,'puna èaša'),(7,18,'na èaši napraviti rub od soli');
+(7,16,'5cl'),(7,15,'2cl'),(7,17,'0,5cl'),(7,2,'2cl'),(7,20,'1cl'),(7,25,'1,5cl'),(7,11,'puna čaša'),(7,18,'na čaši napraviti rub od soli');
 
 insert into stavke(koktel,sastojak,normativ)
 values
-(8,19,'4,5cl'),(8,20,'3cl'),(8,17,'1,5cl'),(8,11,'puna èaša');
+(8,19,'4,5cl'),(8,20,'3cl'),(8,17,'1,5cl'),(8,11,'puna čaša');
 
 insert into stavke(koktel,sastojak,normativ)
 values
@@ -130,13 +144,31 @@ values
 
 insert into stavke(koktel,sastojak,normativ)
 values
-(10,15,'2cl'),(10,1,'4cl'),(10,22,'1cl'),(10,20,'2cl'),(10,17,'2cl'),(10,2,'1cl'),(10,5,'puna èaša');
+(10,15,'2cl'),(10,1,'4cl'),(10,22,'1cl'),(10,20,'2cl'),(10,17,'2cl'),(10,2,'1cl'),(10,5,'puna čaša');
 
 insert into stavke(koktel,sastojak,normativ)
 values
-(11,1,'5cl'),(11,23,'12cl'),(11,2,'3cl'),(11,11,'puna èaša');
+(11,1,'5cl'),(11,23,'12cl'),(11,2,'3cl'),(11,11,'puna čaša');
 
 insert into stavke(koktel,sastojak,normativ)
 values
-(12,5,'5cl'),(12,2,'3cl'),(12,24,'12cl'),(12,6,'puna èaša');
+(12,5,'5cl'),(12,2,'3cl'),(12,24,'12cl'),(12,6,'puna čaša')
+
+insert into stavke (koktel,sastojak,normativ)
+values
+(13,16,'4,5cl'),(13,9,'9cl'),(13,26,'1,5cl'),(13,11,'par komada');
+
+insert into stavke (koktel,sastojak,normativ)
+values
+(14,16,'2cl'),(14,8,'2cl'),(14,1,'2cl'),(14,25,'1,5cl'),(14,27,'2cl'),(14,20,'2,5cl'),(14,23,'5cl'),(14,11,'puna čaša');
+
+
+insert into stavke (koktel,sastojak,normativ)
+values
+(15,27,'3cl'),(15,28,'3cl'),(15,29,'3cl'),(15,11,'puna čaša');
+
+update sastojci set vrsta='led' where sifra=6;
+update sastojci set vrsta='led' where sifra=11;
+
+
 
