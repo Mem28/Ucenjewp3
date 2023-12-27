@@ -30,120 +30,159 @@ alter table stavke add foreign key (sastojak) references sastojci(sifra);
 insert into kokteli(naziv,opis,upute_za_pripremu)
 values
 
-('Mojito','Mojito je jedan od najpoznatijih koktela na svijetu. Tradicionalni Kubanski koktel nastao u Havani 
+('Mojito',
+
+'Mojito je jedan od najpoznatijih koktela na svijetu. Tradicionalni Kubanski koktel nastao u Havani 
 brzinom munje se proširio po svijetu zahvaljujući trgovcima i gusarima. S obzirom da je imao sastojke
 koji su u izobilju na otoku te uz njegovu lakoću izrade nije ni čudo da je postao tako popularan.',
-'1. Sve sastojke osim mineralne vode ulijte u čašu
- 2. Dopunite ledom ili drobljenim ledom
- 3. Promiješajte pokretima žlicom gore dolje da se svi sastojci izmiješaju i to radite 20 sekundi
- 4. Dodajte mineralnu vodu i ponovno promiješajte 20 sekundi
- 5. Ukrasite stabljikom mente i uživajte u ljetnom klasiku'),
 
-('Mojito virgin','Osvježavajuća mješavina limete i mente, ovaj Virgin Mojito recept bit će vaše novo omiljeno piće!
-Ovaj bezalkoholni recept za mojito bit će hit kod djece i odraslih. ',
-'1. Sve sastojke osim mineralne vode ulijte u čašu
- 2. Dopunite ledom ili drobljenim ledom
- 3. Promiješajte pokretima žlicom gore dolje da se svi sastojci izmiješaju i to radite 20 sekundi
- 4. Dodajte mineralnu vodu i ponovno promiješajte 20 sekundi
- 5. Ukrasite stabljikom mente i uživajte u ljetnom klasiku'),
+'1. Staviti listiće mente, šećer i kockice limete u visoku čašu
+ 2. Sastojke nježno zdrobiti, dodati drobljeni led, rum i mineralnu.
+ 3. Promiješati
+ 4. Ukrasiti dodatnim ledom,mentom te kriškom limete'),
 
-('Sex on the beach','Uz Mojito vjerojatno najpopularniji koktel u Hrvatskoj. Što se tiče porijekla ovog koktela 
-nagađa se da je potekao s Floride kada je u svrhu promocije Peach schnappsa barmen Ted Pizio 1980ih 
-došao na ideju što prodaje piće. Seks. I tako je nastao Sex on the beach da privuče studente koji su 
-dolazili na floridu za spring break odnosno proljetne praznike krajem 3. mjeseca.',
-'1. Sve sastojke ulijte u čašu
- 2. Dodajte led tako da napunite čašu
- 3. Promiješajte žlicom 10ak sekundi da ohladite piće
- 4. Ukrasite narančom i uživajte'),
+('Mojito virgin',
 
-('Pina colada','Pina colada je jedan od najpoznatijih ljetnih koktela porijeklom s Portorika. 
-Obično se pravi u dvije verzije i to u shaken i blended verziji.
-Blended verzija je verzija s više leda gdje se koktel napravi u blenderu i dobijemo 
-izrazito hladno piće teksture gotovo kao sladoled.',
+'Bezalkoholna verzija vječnog klasika Mojita ',
+
+'1. Staviti listiće mente, šećer i kockice limete u visoku čašu
+ 2. Sastojke nježno zdrobiti, dodati drobljeni led i mineralnu.
+ 3. Promiješati
+ 4. Ukrasiti dodatnim ledom,mentom te kriškom limete'),
+
+('Sex on the beach',
+
+'Legenda kaže da je 1987. godine u Floridi, za vrijeme ljetnih praznika, mladi barmen napravio mješavinu 
+peach schnapps (likera od breskve), vodke, soka od limete i grenadine za lokalno natjecanje barmena. 
+Kada su ga upitali kako se piće zove, ko iz topa, ispalio je “Sex on the Beach”, s obzirom 
+da su dva glavna razloga zašto ljudi dolaze na Floridu u ljetnim mjesecima upravo plaža i sex, i eto imena.',
+
+'1. U shaker staviti sve sastojke
+ 2. Protresti 15 sec, preliti u čašu
+ 4. Ukrasiti narančom i višnjom'),
+
+('Pina colada',
+
+'Legenda kaže da je gusar iz Puerto Rica svojoj posadi pravio piće koje je bilo mješavina soka od ananasa,
+ruma i kokosovog mlijeka kako bi ih zaštitio od prevelike vrućine i podignuo moral. 
+Svake godine 10. srpnja se slavi dan Pina Colade u Puerto Ricu.',
+
 '1. Sve sastojke ulijte u blender
- 2. Dodajte 5,6 kocki leda u tu posudu
+ 2. Dodajte 5,6 kocki leda 
  3. Blendajte 10 sekundi
- 4. Izlijte piće u rashlađenu čašu'),
+ 4. Izlijte piće u rashlađenu čašu i ukrasite kriškom ananasa'),
 
-('Daiquiri','Klasični Daiquiri recept se sastoji od bijelog ruma, preferabilno s Karipskih otoka
+('Daiquiri',
+
+'Klasični Daiquiri recept se sastoji od bijelog ruma, preferabilno s Karipskih otoka
 koji imaju povijest Španjolske kolonizacije, sviježeg soka od limete te sitnog šećera ili šećernog sirupa.
 Nastanak recepture se pripisuje rudarskom inženjeru Jenningsu Coxu, koji je negdje u vremenu 
 između 1898. i 1902. godine radio u rudniku u blizini malenog sela Daiquiri na Kubi.',
+
 '1. U shaker staviti led, rum, sok od limete i sirup
- 2. Protresti, preliti u čašu
+ 2. Protresti 15 sec, procijediti u rashlađenu čašu za daiquiri
  3. Ukrasiti kolutom limete'),
 
-('Cosmopolitan','Cosmopolitan koktel ili neformalno Cosmo je jedan od najpopularnijih alkoholnih koktela na svijetu.
+('Cosmopolitan',
+
+'Cosmopolitan koktel ili neformalno Cosmo je jedan od najpopularnijih alkoholnih koktela na svijetu.
 Nastao je u 20. stoljeću, a svoju slavu stekao je zahvaljujući seriji ”Seks i Grad”.',
-'1. Sastojke stavite u shaker pun leda
- 2. Protresite i ocijedite (bez leda) u rashlađenu čašu za martini
- 3. Čašu ukrasite kriškom limuna ili limete'),
 
-('Margarita','Koktel Margarita jedan je od najomiljenijih koktela za žene. 
+'1. Sastojke staviti u shaker pun leda
+ 2. Protresti i procijediti u rashlađenu čašu za martini
+ 3. Ukrasiti kolutom limuna ili limete'),
+
+('Margarita',
+
+'Koktel Margarita jedan je od najomiljenijih koktela za žene. 
 Oštar i ukusan, ovaj koktel je najpoznatiji koktel na bazi tequile.',
-'1. Kriškom limete natrljajte rub čaše i umočite je u tanjurić napunjen soli
- 2. U shaker stavite led, dodajte sastojke, dobro protresite i procijediti u čašu
- 3. Ukrasite kriškom limete i poslužite'),
 
-('Whiskey sour','Ovaj koktel se prvi put u pisanim dokumentima spominje 1862. u knjizi Jerryija Thomasa
-"The bartenders guide" no vrlo vjerojatno su se, ovaj koktel i kokteli iz porodice soura, pili i puno prije te godine.
-Dok su mornari putovali između Europe i Amerika i nosili sa sobom viski trebalo im je vitamina C
+'1. Kriškom limete natrljati rub čaše i umočiti je u tanjurić napunjen soli
+ 2. U shaker staviti led, dodati sastojke, dobro protresti i procijediti u čašu
+ 3. Ukrasiti kriškom limete'),
+
+('Whiskey sour',
+
+'Ovaj koktel se prvi put u pisanim dokumentima spominje 1862. u knjizi Jerryija Thomasa
+"The bartenders guide". Dok su mornari putovali između Europe i Amerike i nosili sa sobom viski, trebalo im je vitamina C
 koji su dobivali iz limuna i limeta koji su našli na otocima.',
-'1. Sve sastojke dobro protresite u shakeru
- 2. Prelijte u čašu
- 3. Ukrasite koricom naranče'),
 
-('Old fashioned','Unatoč svom imenu, Old Fashioned (staromodan) nikako ne stari. 
-Njegovi sastojci su, prvi put, pomiješani još početkom 19. stoljeća. Od tada, Bourbon,
-šećer, Agnostura biljni liker i naranča, sastojci koji čine ovaj koktel, dio su menija svakog cijenjenog koktel-bara.',
-'1. Stavite kocku šećera u čašu, pospite sa angosturom i žličicom vode, 
-mješajte dok se ne rastopi, zatim dodajte kocke leda i bourbon/whiskey
- 2. Ukrasite sa kriškom naranče i ukrasnom višnjom'),
+'1. Sve sastojke dobro protresti u shakeru
+ 2. Preliti u čašu
+ 3. Ukrasiti koricom naranče'),
 
-('Mai tai','Mai Tai je poznati alkoholni koktel prvi put napravljen u restoranu Trader Vic u Oaklandu 1944. godine.
+('Old fashioned',
+
+'Unatoč svom imenu, Old Fashioned (staromodan) nikako ne stari. 
+Njegovi sastojci su prvi put pomiješani još početkom 19. stoljeća. Od tada Bourbon,
+šećer, Agnostura i naranča; dio su menija svakog cijenjenog koktel-bara.',
+
+'1. Staviti kocku šećera u čašu, pospiti sa angosturom i žličicom vode, 
+mješati dok se ne rastopi, dodati kocke leda i bourbon/whiskey
+ 2. Ukrasiti sa kriškom naranče i ukrasnom višnjom'),
+
+('Mai tai',
+
+'Mai Tai je poznati alkoholni koktel prvi put napravljen u restoranu Trader Vic u Oaklandu 1944. godine.
 Naziv koktela dolazi od tahićanske riječi Maita i što znači dobro. Naziv je nastao tako kad je vlasnik restorana Victor
 J. Bergeron napravio koktel za svoje prijatelje sa Tahitija nakon čega je jedan od tih prijaetlja, 
 Carrie Guild, nakon što ga je probao rekao "Maita i roa ae!" što znači veoma dobro.',
-'1. Sve sastojke stavite u shaker
- 2. Lagano protresite i prelijte u čašu
- 3. Ukrasite s kriškom ananasa, 2 trešnje i listom mente'),
 
-('Cuba libre','Kad su Amerikanci “oslobodili” Kubu od Španjolaca, grupa vojnika otišla je proslaviti pobjedu u jedan bar u Havani.
-Tom prilikom, neki je časnik naručio rum sa zdrobljenim ledom, pomiješan s “Coca-Colom” i iscijeđenom limetom. 
+'1. Sve sastojke staviti u shaker
+ 2. Lagano protresti i preliti u čašu
+ 3. Ukrasiti s kriškom ananasa, 2 trešnje i listom mente'),
+
+('Cuba libre',
+
+'Kad su Amerikanci “oslobodili” Kubu od Španjolaca, grupa vojnika otišla je proslaviti pobjedu u jedan bar u Havani.
+Tom prilikom, neki je časnik naručio rum, pomiješan s “Coca-Colom” i iscijeđenom limetom. 
 Svoju tekuću kreaciju “trgnuo” je s tolikim užitkom da su je i ostali htjeli probati.',
-'1. Sve sastojke stavite u čašu sa par kocki leda
- 2. Ukrasite kriškom limete'),
 
-('Moscow mule','U New Yorku 1941. tri prijatelja su sjedila za stolom restorana. Jedan od njih se bavio proizvodnjom piva od đumbira,
+'1. Sve sastojke staviti u čašu sa par kocki leda
+ 2. Ukrasiti kriškom limete'),
+
+('Moscow mule',
+
+'U New Yorku 1941. tri prijatelja su sjedila za stolom restorana. Jedan od njih se bavio proizvodnjom piva od đumbira,
 drugi distribucijom votke, a treći hrane. Odlučili su spariti votku, pivo od đumbira 
 i limun te su dobili koktel koji je poharao cijelu zemlju i lansirao Smirnoff u vrh industrije alkoholnih pića.',
-'1. Dodajte sastojke u bakreni lončić pun leda
- 2. Promiješajte
- 3. Ukrasite kriškom limete'),
 
-('Tequila sunrise','Vjeruje se da je Tequila Sunrise stvorena 1930-ih u Tijuani, Meksiko. 
-Međutim, stekao je široku popularnost 1970-ih, dijelom zahvaljujući spominjanju u pjesmi 
+'1. Dodati sastojke u bakreni lončić pun leda
+ 2. Promiješati
+ 3. Ukrasiti kriškom limete'),
+
+('Tequila sunrise',
+
+'Vjeruje se da je Tequila Sunrise stvorena 1930-ih u Tijuani, Meksiko. 
+Međutim, stekla je široku popularnost 1970-ih, dijelom zahvaljujući spominjanju u pjesmi 
 Rolling Stonesa “Brown Sugar”. Tijekom godina, ostao je omiljeni koktel, slavljen zbog svog upečatljivog izgleda i prekrasnog profila okusa.',
-'1. U čašu sa par kocki leda stavite tequilu i sok od naranče
- 2. Dodajte sirup koji će potonuti na dno
- 3. Lagano promještajte kako bi se stvorio efekt izlaska sunca
- 4. Ukrasite s kriškom naranče i višnjom'),
+
+'1. U čašu sa ledom staviti tequilu i sok od naranče
+ 2. Dodati sirup koji će potonuti na dno
+ 3. Lagano promješati kako bi se stvorio efekt izlaska sunca
+ 4. Ukrasiti s kriškom naranče i višnjom'),
 
 
-('Long island iced tea','Svoje ponosno ime koktel je dobio po Long Islandu koji se nalazi na jugu New Yorka.
+('Long island iced tea',
+
+'Svoje ponosno ime koktel je dobio po Long Islandu koji se nalazi na jugu New Yorka.
  Izumljen je prije 100 godina, odnosno tijekom slavne prohibicije 1920-ih u Sjedinjenim Državama. 
  Stanovnici su jednostavno morali biti šifrirani od policije, pa su se sve vrste alkoholnih pića maskirale u bezalkoholne',
+
 '1. Shaker za koktele do polovine napuniti kockicama leda
  2. Dodati sve sastojke osim coca-cole
- 3. Dobro protresti i uliti u čašu koju ste do polovine napunili sa ledom
- 4. Dodati coca colu i ukrasiti sa kriškom limuna'),
+ 3. Dobro protresti i uliti u čašu 
+ 4. Dodati coca colu i ukrasiti kriškom limuna'),
 
 
-('Negroni','Dolazeći iz prekrasne Italije, koktel Negroni je klasik koji zaslužuje pažnju svakog ljubitelja koktela.
+('Negroni',
+
+'Dolazeći iz prekrasne Italije, koktel Negroni je klasik koji zaslužuje pažnju svakog ljubitelja koktela.
 Njegova povijest počinje početkom 20. stoljeća, kada je prema legendi grof Camillo Negroni, zamolio barmena u Caffèu Casoni 
 da napravi jaču verziju tada popularnog Americana.',
-'1. Sve sastojke stavite u shaker sa ledom i dobro protresite
- 2. Procijedie u ohlađenu čašu
+
+'1. Sve sastojke staviti u shaker sa ledom i dobro protresti
+ 2. Procijediti u ohlađenu čašu
  3. Ukrasite korom naranče');
 
 
@@ -152,11 +191,11 @@ da napravi jaču verziju tada popularnog Americana.',
 
 insert into sastojci(naziv,vrsta)
 values
-('bijeli rum','alkohol'),('sok cijeđene limete','sok'),('mineralna voda',null),('smeđi šećer',null),('menta',null),('drobljeni led',null),
-('liker od breskve','liker'),('votka','alkohol'),('sok od naranče','sok'),('sok od brusnice','sok'),('kockice leda',null),
+('bijeli rum','alkohol'),('sok cijeđene limete','sok'),('mineralna voda',null),('smeđi šećer',null),('menta',null),('drobljeni led','led'),
+('liker od breskve','liker'),('votka','alkohol'),('sok od naranče','sok'),('sok od brusnice','sok'),('kockice leda','led'),
 ('krema od kokosa',null),('sirup od kokosa','sirup'),('sok od ananasa','sok'),('Cointreau','alkohol'),('tequila','alkohol'),
 ('simple sirup','sirup'),('sol',null),('bourbon whiskey','alkohol'),('sok od limuna','sok'),('angostura',null),('amaretto','alkohol'),
-('coca-cola','sok'),('ginger beer',null),('triple sec','alkohol'),('grenadine sirup','sirup'),('gin','alkohol'),('vermouth','alkohol'),
+('coca-cola','sok'),('ginger beer','alkohol'),('triple sec','alkohol'),('grenadine sirup','sirup'),('gin','alkohol'),('vermouth','alkohol'),
 ('campari','alkohol');
 
 insert into stavke(koktel,sastojak,normativ)
@@ -173,7 +212,7 @@ values
 
 insert into stavke(koktel,sastojak,normativ)
 values
-(4,1,'6cl'),(4,12,'3cl'),(4,13,'2cl'),(4,14,'4,5cl'),(4,2,'1,5cl'),(4,6,'puna čaša - blendati');
+(4,1,'6cl'),(4,12,'3cl'),(4,13,'2cl'),(4,14,'4,5cl'),(4,2,'1,5cl'),(4,6,'puna čaša');
 
 insert into stavke(koktel,sastojak,normativ)
 values
@@ -193,7 +232,7 @@ values
 
 insert into stavke(koktel,sastojak,normativ)
 values
-(9,4,'1žličica'),(9,21,'3kapljice'),(9,19,'6cl');
+(9,4,'1žličica'),(9,21,'3kapljice'),(9,19,'6cl'),(9,11,'pola čaše');
 
 insert into stavke(koktel,sastojak,normativ)
 values
@@ -220,8 +259,6 @@ insert into stavke (koktel,sastojak,normativ)
 values
 (15,27,'3cl'),(15,28,'3cl'),(15,29,'3cl'),(15,11,'puna čaša');
 
-update sastojci set vrsta='led' where sifra=6;
-update sastojci set vrsta='led' where sifra=11;
 
 
 
