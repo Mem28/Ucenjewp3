@@ -183,9 +183,27 @@ da napravi jaču verziju tada popularnog Americana.',
 
 '1. Sve sastojke staviti u shaker sa ledom i dobro protresti
  2. Procijediti u ohlađenu čašu
- 3. Ukrasite korom naranče');
+ 3. Ukrasiti korom naranče'),
 
+ ('Zombie',
 
+ 'Izumitelj Zombi koktela, Donn Beach, napravio je mješavinu 3 vrste ruma, likera i voćnih sokova
+  da pomogne jednom gostu svladati – mamurluk. Gost se naravno vratio nakon svega nekoliko dana i 
+  žalio se kako se dan nakon tog koktela osjećao kao zombi. Nakon što je to čuo, Donn je ovaj koktel uvrstio na koktel kartu sa tim nazivom.',
+
+'1. Sve sastojke sa ledom dobro protresti u shakeru
+ 2. Preliti u čašu sa par kocki leda
+ 3. Ukrasiti listićima mente'),
+
+ ('Martini',
+
+'Svoju neprolaznu popularnost ovaj bistri eliksir, načinjen od gina i suhog vermoutha,
+ a dekoriran najčešće maslinom ili spiralom korice limuna, duguje američkom visokom društvu koje ga je rado ispijalo. 
+ I hollywoodske zvijezde koje su ga uživale, kako na velikom platnu tako i privatno, dodale su mu auru glamura i svjetsku slavu.',
+
+'1. U shaker uliti ohlađeni gin, zatim dodati ohlađeni vermut i smrvljeni led
+ 2. Dobro protresti u shakeru, cca 30 sec, uliti u ohlađenu martini čašu
+ 3. Dodati 2 masline');
 	
 
 
@@ -196,7 +214,7 @@ values
 ('krema od kokosa',null),('sirup od kokosa','sirup'),('sok od ananasa','sok'),('Cointreau','alkohol'),('tequila','alkohol'),
 ('simple sirup','sirup'),('sol',null),('bourbon whiskey','alkohol'),('sok od limuna','sok'),('angostura',null),('amaretto','alkohol'),
 ('coca-cola','sok'),('ginger beer','alkohol'),('triple sec','alkohol'),('grenadine sirup','sirup'),('gin','alkohol'),('vermouth','alkohol'),
-('campari','alkohol');
+('campari','alkohol'),('tamni rum','alkohol'),('brandy od marelice','alkohol'),('zlatni rum','alkohol'),('sok od papaje','sok'),('masline',null);
 
 insert into stavke(koktel,sastojak,normativ)
 values
@@ -259,6 +277,13 @@ insert into stavke (koktel,sastojak,normativ)
 values
 (15,27,'3cl'),(15,28,'3cl'),(15,29,'3cl'),(15,11,'puna čaša');
 
+insert into stavke (koktel,sastojak,normativ)
+values 
+(16,2,'1,5cl'),(6,14,'1,25cl'),(6,1,'1.25cl'),(6,30,'1,25cl'),(6,26,'par kapi'),(6,31,'1,25cl'),(6,32,'1,25cl'),(6,33,'1,25cl'),(6,11,'puna čaša');
+
+insert into  stavke (koktel,sastojak,normativ)
+values
+(17,27,'6cl'),(17,28,'1cl'),(17,34,'2 komada');
 
 
 
