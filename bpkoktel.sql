@@ -1,16 +1,16 @@
 use master;
 go
-drop database if exists koktelbp;
+drop database if exists koktel;
 go
-create database koktelbp collate Croatian_CI_AS;
+create database koktel collate Croatian_CI_AS;
 go
-use koktelbp;
+use koktel;
 
 create table kokteli(
 sifra int not null primary key identity (1,1),
 naziv varchar (50) not null,
-opis text,
-upute_za_pripremu text
+opis varchar(max),
+upute_za_pripremu varchar(max)
 );
 create table sastojci(
 sifra int not null primary key identity(1,1),
