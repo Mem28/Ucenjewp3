@@ -20,7 +20,7 @@ vrsta varchar(50)
 create table stavke(
 koktel int not null,
 sastojak int not null,
-normativ varchar(50),
+normativ decimal(18,2),
 );
 
 alter table stavke add foreign key (koktel) references kokteli(sifra);
@@ -36,7 +36,7 @@ values
 brzinom munje se proširio po svijetu zahvaljujući trgovcima i gusarima. S obzirom da je imao sastojke
 koji su u izobilju na otoku te uz njegovu lakoću izrade nije ni čudo da je postao tako popularan.',
 
-'1. Staviti listiće mente, šećer i kockice limete u visoku čašu
+'1. Staviti 7,8 listića mente, 2 žličice šećera i kockice limete u visoku čašu
  2. Sastojke nježno zdrobiti, dodati drobljeni led, rum i mineralnu.
  3. Promiješati
  4. Ukrasiti dodatnim ledom,mentom te kriškom limete'),
@@ -45,7 +45,7 @@ koji su u izobilju na otoku te uz njegovu lakoću izrade nije ni čudo da je pos
 
 'Bezalkoholna verzija vječnog klasika Mojita ',
 
-'1. Staviti listiće mente, šećer i kockice limete u visoku čašu
+'1. Staviti 7,8 listića mente, 2 žličice šećera i kockice limete u visoku čašu
  2. Sastojke nježno zdrobiti, dodati drobljeni led i mineralnu.
  3. Promiješati
  4. Ukrasiti dodatnim ledom,mentom te kriškom limete'),
@@ -57,7 +57,7 @@ peach schnapps (likera od breskve), vodke, soka od limete i grenadine za lokalno
 Kada su ga upitali kako se piće zove, ko iz topa, ispalio je “Sex on the Beach”, s obzirom 
 da su dva glavna razloga zašto ljudi dolaze na Floridu u ljetnim mjesecima upravo plaža i sex, i eto imena.',
 
-'1. U shaker staviti sve sastojke
+'1. U shaker staviti sve sastojke i led
  2. Protresti 15 sec, preliti u čašu
  4. Ukrasiti narančom i višnjom'),
 
@@ -107,7 +107,7 @@ Oštar i ukusan, ovaj koktel je najpoznatiji koktel na bazi tequile.',
 "The bartenders guide". Dok su mornari putovali između Europe i Amerike i nosili sa sobom viski, trebalo im je vitamina C
 koji su dobivali iz limuna i limeta koji su našli na otocima.',
 
-'1. Sve sastojke dobro protresti u shakeru
+'1. Sve sastojke sa ledom dobro protresti u shakeru
  2. Preliti u čašu
  3. Ukrasiti koricom naranče'),
 
@@ -128,7 +128,7 @@ Naziv koktela dolazi od tahićanske riječi Maita i što znači dobro. Naziv je 
 J. Bergeron napravio koktel za svoje prijatelje sa Tahitija nakon čega je jedan od tih prijaetlja, 
 Carrie Guild, nakon što ga je probao rekao "Maita i roa ae!" što znači veoma dobro.',
 
-'1. Sve sastojke staviti u shaker
+'1. Sve sastojke sa ledom staviti u shaker
  2. Lagano protresti i preliti u čašu
  3. Ukrasiti s kriškom ananasa, 2 trešnje i listom mente'),
 
@@ -204,86 +204,82 @@ da napravi jaču verziju tada popularnog Americana.',
 '1. U shaker uliti ohlađeni gin, zatim dodati ohlađeni vermut i smrvljeni led
  2. Dobro protresti u shakeru, cca 30 sec, uliti u ohlađenu martini čašu
  3. Dodati 2 masline');
-	
 
 
 insert into sastojci(naziv,vrsta)
 values
-('bijeli rum','alkohol'),('sok cijeđene limete','sok'),('mineralna voda',null),('smeđi šećer',null),('menta',null),('drobljeni led','led'),
-('liker od breskve','liker'),('votka','alkohol'),('sok od naranče','sok'),('sok od brusnice','sok'),('kockice leda','led'),
+('bijeli rum','alkohol'),('sok cijeđene limete','sok'),('mineralna voda',null),
+('liker od breskve','liker'),('votka','alkohol'),('sok od naranče','sok'),('sok od brusnice','sok'),
 ('krema od kokosa',null),('sirup od kokosa','sirup'),('sok od ananasa','sok'),('Cointreau','alkohol'),('tequila','alkohol'),
 ('simple sirup','sirup'),('sol',null),('bourbon whiskey','alkohol'),('sok od limuna','sok'),('angostura',null),('amaretto','alkohol'),
 ('coca-cola','sok'),('ginger beer','alkohol'),('triple sec','alkohol'),('grenadine sirup','sirup'),('gin','alkohol'),('vermouth','alkohol'),
-('campari','alkohol'),('tamni rum','alkohol'),('brandy od marelice','alkohol'),('zlatni rum','alkohol'),('sok od papaje','sok'),('masline',null);
+('campari','alkohol'),('tamni rum','alkohol'),('brandy od marelice','alkohol'),('zlatni rum','alkohol'),('sok od papaje','sok');
 
 insert into stavke(koktel,sastojak,normativ)
 values
-(1,1,'5cl'),(1,2,'3cl'),(1,3,'1dcl'),(1,4,'1žlica'),(1,5,'7listića'),(1,6,'puna čaša');
+(1,1,0.05),(1,2,0.03),(1,3,0.1);
 
 insert into stavke(koktel,sastojak,normativ)
 values
-(2,2,'3cl'),(2,3,'1dcl'),(2,4,'1žlica'),(2,5,'7listića'),(2,6,'puna čaša');
+(2,2,0.03),(2,3,0.1);
 
 insert into stavke(koktel,sastojak,normativ)
 values
-(3,7,'4cl'),(3,8,'3cl'),(3,9,'8cl'),(3,10,'2cl'),(3,11,'puna čaša');
+(3,4,0.03),(3,5,0.05),(3,6,0.08),(3,7,0.02);
 
 insert into stavke(koktel,sastojak,normativ)
 values
-(4,1,'6cl'),(4,12,'3cl'),(4,13,'2cl'),(4,14,'4,5cl'),(4,2,'1,5cl'),(4,6,'puna čaša');
+(4,1,0.06),(4,8,0.03),(4,9,0.02),(4,10,0.15);
 
 insert into stavke(koktel,sastojak,normativ)
 values
-(5,1,'6cl'), (5,2,'2cl'),(5,17,'2cl'),(5,11,'puna čaša');
+(5,1,0.06), (5,2,0.02),(5,13,0.02);
 
 insert into stavke(koktel,sastojak,normativ)
 values
-(6,8,'3cl'),(6,15,'1,5cl'),(6,2,'1žličica'),(6,10,'0,5cl'),(6,11,'puna čaša');
+(6,5,0.03),(6,11,0.15),(6,2,0.15),(6,7,0.05);
 
 insert into stavke(koktel,sastojak,normativ)
 values
-(7,16,'5cl'),(7,15,'2cl'),(7,17,'0,5cl'),(7,2,'2cl'),(7,20,'1cl'),(7,25,'1,5cl'),(7,11,'puna čaša'),(7,18,'na čaši napraviti rub od soli');
+(7,12,0.05),(7,11,0.02),(7,13,0.05),(7,2,0.02),(7,16,0.01),(7,29,0.15);
 
 insert into stavke(koktel,sastojak,normativ)
 values
-(8,19,'4,5cl'),(8,20,'3cl'),(8,17,'1,5cl'),(8,11,'puna čaša');
+(8,19,0.45),(8,20,0.03),(8,17,0.15);
 
 insert into stavke(koktel,sastojak,normativ)
 values
-(9,4,'1žličica'),(9,21,'3kapljice'),(9,19,'6cl'),(9,11,'pola čaše');
+(9,15,0.45),(9,16,0.03),(9,17,0.009);
 
 insert into stavke(koktel,sastojak,normativ)
 values
-(10,15,'2cl'),(10,1,'4cl'),(10,22,'1cl'),(10,20,'2cl'),(10,17,'2cl'),(10,2,'1cl'),(10,5,'puna čaša');
+(10,11,0.02),(10,1,0.02),(10,26,0.02),(10,18,0.01),(10,16,0.02),(10,13,0.02),(10,2,0.02);
 
 insert into stavke(koktel,sastojak,normativ)
 values
-(11,1,'5cl'),(11,23,'12cl'),(11,2,'3cl'),(11,11,'puna čaša');
+(11,1,0.05),(11,19,0.12),(11,2,0.03);
 
 insert into stavke(koktel,sastojak,normativ)
 values
-(12,5,'5cl'),(12,2,'3cl'),(12,24,'12cl'),(12,6,'puna čaša')
+(12,5,0.05),(12,2,0.03),(12,20,0.12);
 
 insert into stavke (koktel,sastojak,normativ)
 values
-(13,16,'4,5cl'),(13,9,'9cl'),(13,26,'1,5cl'),(13,11,'par komada');
+(13,12,0.45),(13,6,0.09),(13,22,0.15);
 
 insert into stavke (koktel,sastojak,normativ)
 values
-(14,16,'2cl'),(14,8,'2cl'),(14,1,'2cl'),(14,25,'1,5cl'),(14,27,'2cl'),(14,20,'2,5cl'),(14,23,'5cl'),(14,11,'puna čaša');
+(14,12,0.02),(14,5,0.02),(14,1,0.02),(14,21,0.15),(14,23,0.02),(14,16,0.25),(14,19,0.05);
 
 
 insert into stavke (koktel,sastojak,normativ)
 values
-(15,27,'3cl'),(15,28,'3cl'),(15,29,'3cl'),(15,11,'puna čaša');
+(15,24,0.03),(15,24,0.03),(15,25,0.03);
 
 insert into stavke (koktel,sastojak,normativ)
 values 
-(16,2,'1,5cl'),(6,14,'1,25cl'),(6,1,'1.25cl'),(6,30,'1,25cl'),(6,26,'par kapi'),(6,31,'1,25cl'),(6,32,'1,25cl'),(6,33,'1,25cl'),(6,11,'puna čaša');
+(16,2,0.15),(6,10,0.01),(6,1,0.01),(6,26,0.01),(6,22,0.01),(6,27,0.01),(6,28,0.01),(6,29,0.01);
 
 insert into  stavke (koktel,sastojak,normativ)
 values
-(17,27,'6cl'),(17,28,'1cl'),(17,34,'2 komada');
-
-
-
+(17,23,0.06),(17,24,0.01);
