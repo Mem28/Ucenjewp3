@@ -1,7 +1,7 @@
 ﻿
 using UcenjeCS;
-
-E01Ulazizlaz.Izvedi();
+E02VarijableTipovipodatakaOperatori.Izvedi();
+//E01Ulazizlaz.Izvedi();
 
 
 
