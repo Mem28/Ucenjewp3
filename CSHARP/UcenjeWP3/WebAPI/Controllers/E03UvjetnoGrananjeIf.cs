@@ -34,7 +34,8 @@ namespace WebAPI.Controllers
         public string Zad2(int ocjena)
         { 
             switch (ocjena)
-            {       case 1:
+            {  
+                    case 1:
                     return "Nedovoljan";
                     case 2:
                     return "Dovoljan";
