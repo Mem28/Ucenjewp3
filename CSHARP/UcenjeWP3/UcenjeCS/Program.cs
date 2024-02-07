@@ -1,6 +1,9 @@
 ﻿
 using UcenjeCS;
-E04UvjetnoGrananjeSwitch.Izvedi();
+Z04.Izvedi();
+//E06ForPetlja.Izvedi();
+//E05Nizovi.Izvedi();
+//E04UvjetnoGrananjeSwitch.Izvedi();
 //Z03.Izvedi();
 //Z02.Izvedi();
 //Z01.Izvedi();
