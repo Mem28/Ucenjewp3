@@ -1,6 +1,12 @@
 ﻿
 using UcenjeCS;
-Z04.Izvedi();
+E09ForEach.Izvedi();
+//E08DoWhile.Izvedi();
+//E07WhilePetlja.Izvedi();
+//Z07.Izvedi();
+//Z06.Izvedi();
+//Z05.Izvedi(); 
+//Z04.Izvedi();
 //E06ForPetlja.Izvedi();
 //E05Nizovi.Izvedi();
 //E04UvjetnoGrananjeSwitch.Izvedi();
