@@ -1,6 +1,7 @@
 ﻿
 using UcenjeCS;
-E09ForEach.Izvedi();
+Subota01.Izvedi();
+//.Izvedi();
 //E08DoWhile.Izvedi();
 //E07WhilePetlja.Izvedi();
 //Z07.Izvedi();
