@@ -1,6 +1,9 @@
 ﻿
 using UcenjeCS;
-Subota01.Izvedi();
+Z08.Izvedi();
+//Kada se metoda poziva na klasi(sto je ovdje slucaj) ona je static
+//E10Metode.Izvedi();
+//Subota01.Izvedi();
 //.Izvedi();
 //E08DoWhile.Izvedi();
 //E07WhilePetlja.Izvedi();
