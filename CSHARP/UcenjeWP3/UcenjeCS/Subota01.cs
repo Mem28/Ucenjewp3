@@ -175,6 +175,8 @@ namespace UcenjeCS
             //            // Napravite program koji će puknut prilikom izvođenja
             //            // a biti će sintaksno ispravan
 
+            //              int i = Console.ReadLine();
+
 
 
             //            // Zadatak 4
@@ -182,6 +184,14 @@ namespace UcenjeCS
             //            //crvenim slovima
 
             //            Console.WriteLine("Edunova");
+
+            //Console.ForegroundColor = ConsoleColor.Red;
+            //Console.WriteLine("Edunova");
+            //Console.ResetColor();
+
+
+
+            
 
 
 

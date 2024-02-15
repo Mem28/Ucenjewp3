@@ -12,8 +12,13 @@ namespace UcenjeCS
    
     internal class Z09
     {
+        // Program unosi ime osobe, visinu i težinu
+        // Program ispisuje crvenom bojom
+        // ako je visina > 170 i <190 te težina je < 90,5
+        // Ti, xxxx si zgodan/zgodna
         public static void Izvedi()
         {
+            
             string ime = Pomocno.UcitajString("Unesi svoje ime");
             int visina = Pomocno.UcitajCijeliBroj("Unesi svoju visinu u cm");
             float tezina = Pomocno.UcitajDecimalniBroj("Unesi svoju težinu u kg");
@@ -22,15 +27,15 @@ namespace UcenjeCS
             {
                 if (tezina<90.5)
                 {
-                    Console.WriteLine("Ti, "+ime+" si zgodan/zgodna." );
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Ti, " + ime + " si zgodan/zgodna.");
+                    Console.ResetColor();
+
                 }
 
             }
         }
-        // Program unosi ime osobe, visinu i težinu
-        // Program ispisuje crvenom bojom
-        // ako je visina > 170 i <190 te težina je < 90,5
-        // Ti, xxxx si zgodan/zgodna
+       
 
 
         

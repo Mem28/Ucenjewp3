@@ -81,7 +81,7 @@ namespace UcenjeCS
             for(; ; )
             {
                 Console.WriteLine(poruka + ": ");
-                s = Console.ReadLine().Trim;
+                s = Console.ReadLine().Trim();
                 if (s.Length==0)
                 {
                     Console.WriteLine("Obavezan unos");
@@ -91,12 +91,23 @@ namespace UcenjeCS
                 try
                 {
                     int.Parse(s);
-                    Console.WriteLine("Unos ne smije biti broj");
+                    Console.WriteLine("Unos ne smije biti cijeli broj");
                     continue;
                 }
                 catch(Exception)
                 {
                 
+                }
+                try
+                {
+                    float.Parse(s);
+                    Console.WriteLine("Unos ne smije biti decimalni broj");
+                    continue;
+                    
+                }
+                catch (Exception)
+                {
+
                 }
                 return s;
             }
