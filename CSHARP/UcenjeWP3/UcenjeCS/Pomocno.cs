@@ -87,10 +87,23 @@ namespace UcenjeCS
                     Console.WriteLine("Obavezan unos");
                     continue;
                 }
+
+                try
+                {
+                    int.Parse(s);
+                    Console.WriteLine("Unos ne smije biti broj");
+                    continue;
+                }
+                catch(Exception)
+                {
+                
+                }
                 return s;
             }
         }
 
+
+      
 
 
 
