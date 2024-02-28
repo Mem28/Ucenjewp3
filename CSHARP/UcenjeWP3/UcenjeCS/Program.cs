@@ -1,6 +1,8 @@
 ﻿
 using UcenjeCS;
-UcenjeCS.E12KlasaObjekt.Program.Izvedi();
+//Kada vidimo kljucnu riječ 'new' poziva se konstruktor
+new UcenjeCS.E13Nasljedivanje.Program();//pozvao sam konstruktor od Programa u E13
+//UcenjeCS.E12KlasaObjekt.Program.Izvedi();
 //E11Rekurzija.Izvedi();
 //Z09.Izvedi();
 //Z08.Izvedi();
