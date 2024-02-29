@@ -46,29 +46,30 @@ namespace UcenjeCS.E14VjezbanjeRadaSObjektima
             {
                     case 1:
                     PrikaziOsobe();
-                    Izbornik();
+                    
                     break;
                     case 2:
                     UnosNoveOsobe();
-                    Izbornik();
+                  
                     break;
                     case 3:
                     PromjenaOsobe();
-                    Izbornik();
+                    
                     break;
                 case 4:
                     BrisanjeOsobe();
-                    Izbornik();
+                    
                     break;
                 case 5:
                     Console.WriteLine("Program je završio. Doviđenja");
-                    break;
+                    return;
                 default:
                     Console.WriteLine("Nije dobra opcija");
                     Console.WriteLine("*********************");
-                    Izbornik();
+                   
                     break;
             }
+            Izbornik();
         }
 
         private void BrisanjeOsobe()
@@ -104,9 +105,9 @@ namespace UcenjeCS.E14VjezbanjeRadaSObjektima
                 return;
             }
             var o = Osobe[izbor - 1];
-            o.Ime = Pomocno.UcitajString("Učitaj ime");
-            o.Prezime = Pomocno.UcitajString("Učitaj prezime");
-            o.Dob = Pomocno.UcitajCijeliBroj("Učitaj dob");
+            o.Ime = Pomocno.UcitajString("Učitaj ime [" + o.Ime + "]");
+            o.Prezime = Pomocno.UcitajString("Učitaj prezime [" + o.Prezime + "]");
+            o.Dob = Pomocno.UcitajCijeliBroj("Učitaj dob [" + o.Dob + "]");
 
         }
 
