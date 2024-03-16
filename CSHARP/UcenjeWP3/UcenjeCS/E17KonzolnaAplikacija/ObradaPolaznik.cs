@@ -102,34 +102,35 @@ namespace UcenjeCS.E17KonzolnaAplikacija
         private void TestniPodaci()
         {
 
-            for(int i=0;i<20; i++) {
-                Polaznici.Add(new Polaznik
-                {
-                    Sifra = i+1,
-                    Ime = Faker.Name.First(),
-                    Prezime = Faker.Name.Last(),
-                    Email = Faker.Internet.Email(),
-                    Oib = Faker.Identification.SocialSecurityNumber()
-                });
-            }
+            //    for(int i=0;i<20; i++) {
+            //        Polaznici.Add(new Polaznik
+            //        {
+            //            Sifra = i+1,
+            //            Ime = "Pero",
+            //            Prezime = "Jurić",
+            //            Email = "difdkdj@gmail.com",
+            //            Oib = "45455"
+            //        });
+            //    }
 
-            //Polaznici.Add(new Polaznik
-            //{
-            //    Sifra = 1,
-            //    Ime = "Ana",
-            //    Prezime="Gal",
-            //    Email="agal@gmail.com",
-            //    Oib="33736472822"
-            //});
+            Polaznici.Add(new Polaznik
+        {
+            Sifra = 1,
+            Ime = "Ana",
+            Prezime="Gal",
+            Email="agal@gmail.com",
+            Oib="33736472822"
+        });
 
-            //Polaznici.Add(new Polaznik
-            //{
-            //    Sifra = 2,
-            //    Ime = "Marija",
-            //    Prezime = "Zimska",
-            //    Email = "mzimska@gmail.com",
-            //    Oib = "33736472821"
-            //});
+        Polaznici.Add(new Polaznik
+        {
+            Sifra = 2,
+            Ime = "Marija",
+            Prezime = "Zimska",
+            Email = "mzimska@gmail.com",
+            Oib = "33736472821"
+        });
         }
     }
 }
+

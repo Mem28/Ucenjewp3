@@ -34,11 +34,10 @@ namespace UcenjeCS.E17KonzolnaAplikacija
             Console.WriteLine("2. Polaznici");
             Console.WriteLine("3. Grupe");
             Console.WriteLine("4. Izlaz iz programa");
-            Console.WriteLine("5. Times New Roman");
-            Console.WriteLine("6. Arial");
+            
 
             switch (Pomocno.ucitajBrojRaspon("Odaberite stavku izbornika: ",
-                "Odabir mora biti 1 - 4.", 1, 6))
+                "Odabir mora biti 1 - 4.", 1, 4))
             {
                 case 1:
                     Console.Clear();
@@ -53,17 +52,7 @@ namespace UcenjeCS.E17KonzolnaAplikacija
                     ObradaGrupa.PrikaziIzbornik();
                     PrikaziIzbornik();
                     break;
-                case 4:
-                    Console.WriteLine("Hvala na korištenju, doviđenja");
-                    break;
-                    case 5:
-                    ConsoleHelper.SetConsoleFont("Times New Roman", 40);
-                    PrikaziIzbornik();
-                    break;
-                case 6:
-                    ConsoleHelper.SetConsoleFont("Arial", 50);
-                    PrikaziIzbornik();
-                    break;
+                
 
             }
 
